@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERONE | Brand Archive</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'verone-green': '#1A3626',
+                        'verone-forest-green': '#172D27',
+                        'verone-beige': '#F2EFE9',
+                        'verone-gold': '#D2AE37',
+                        'verone-black': '#111111',
+                        'verone-brown': '#3B2F2F',
+                    },
+                    fontFamily: {
+                        'serif': ['Inika', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #F2EFE9; color: #111111; overflow-x: hidden; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.is-visible { opacity: 1; transform: translateY(0); }
+        .parallax-wrapper { overflow: hidden; position: relative; }
+        .parallax-img { height: 120%; width: 100%; object-fit: cover; position: absolute; top: -10%; will-change: transform; }
+        .hover-underline::after { content: ''; position: absolute; width: 0; height: 1px; bottom: -2px; left: 0; background-color: currentColor; transition: width 0.3s ease; }
+        .hover-underline:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="font-sans font-light">
+
+    <div class="bg-verone-green text-center py-3 px-4 relative z-50">
+        <p class="text-verone-gold text-[10px] tracking-[0.3em] uppercase font-semibold">Heritage Sportswear Archive</p>
+    </div>
+
+    <header class="sticky top-0 z-40 bg-verone-beige border-b border-black/10 transition-all" id="navbar">
+        <div class="max-w-screen-2xl mx-auto px-6 h-20 flex justify-between items-center text-xs font-semibold tracking-[0.2em] uppercase text-verone-black">
+            <div class="w-1/3">
+                <a href="#" class="hover-underline relative">Shop</a>
+                <span class="mx-4 text-gray-300">|</span>
+                <a href="#" class="hover-underline relative">Archive</a>
+            </div>
+            <div class="w-1/3 text-center">
+                <a href="#" class="font-serif text-3xl tracking-[0.2em] font-bold">VERONE</a>
+            </div>
+            <div class="w-1/3 flex justify-end space-x-6">
+                <a href="#" class="hover-underline relative text-gray-500">Brand Story</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative h-[85vh] flex flex-col justify-center items-center px-6 border-b border-black/10">
+            <div class="absolute inset-0 flex">
+                <div class="w-1/2 bg-verone-beige"></div>
+                <div class="w-1/2 bg-[#E8E5DF]"></div>
+            </div>
+            <div class="relative z-10 text-center flex flex-col items-center w-full max-w-5xl reveal is-visible">
+                <div class="parallax-wrapper w-full aspect-[21/9] overflow-hidden mb-16 border border-black/10">
+                    <img src="./images/Stadium.png" alt="Hero Archive" class="parallax-img grayscale opacity-90" data-speed="0.1">
+                </div>
+                <h1 class="font-serif text-8xl md:text-[120px] text-verone-green mb-8 tracking-wide drop-shadow-sm">VERONE</h1>
+                <a href="#" class="border border-verone-black px-10 py-4 font-bold tracking-[0.3em] uppercase hover:bg-verone-black hover:text-verone-beige transition-all">
+                    One For All
+                </a>
+            </div>
+        </section>
+
+        <section class="py-40 px-6 max-w-screen-md mx-auto text-center border-b border-black/10">
+            <h2 class="font-serif text-4xl tracking-[0.2em] uppercase mb-16 reveal">The Meaning of One</h2>
+            <div class="space-y-12 text-base md:text-lg font-light leading-loose text-gray-700">
+                <p class="reveal">VERONE은 <span class="font-serif font-semibold text-verone-green tracking-[0.2em] uppercase">Everyone, Ever One, One For All</span> 의 의미를 담고 있습니다.</p>
+                <p class="reveal delay-100">우리는 단순히 옷을 만드는 것을 넘어, 시간이 지나도 변하지 않는 가치와 사람을 연결하는 통일성을 제안합니다.</p>
+                <p class="reveal delay-200">유행처럼 빠르게 스쳐가는 것이 아닌, 당신의 아카이브에 가장 오래 남을 클래식 스포츠웨어의 새로운 기준입니다.</p>
+            </div>
+        </section>
+
+        <section class="py-40 px-6 max-w-screen-2xl mx-auto border-b border-black/10">
+            <div class="flex flex-col md:flex-row gap-20 items-start">
+                <div class="w-full md:w-1/3 md:sticky md:top-40 reveal">
+                    <span class="text-[11px] tracking-[0.4em] uppercase font-bold text-gray-400 mb-4 block">01 . Origin</span>
+                    <h2 class="font-serif text-4xl tracking-[0.1em] uppercase mb-8">Inspired by<br>Heritage</h2>
+                    <p class="text-sm font-light leading-loose text-gray-600 mb-10">1950~1960년대 클래식 스포츠웨어의 황금기. 당시의 거친 숨결이 묻어나는 견고한 원단과 불필요한 장식을 배제한 본질적인 실루엣이 VERONE의 뼈대가 됩니다.</p>
+                </div>
+                <div class="w-full md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="aspect-[3/4] bg-[#F8F8F8] parallax-wrapper reveal border border-black/10 p-3">
+                        <img src="./images/Mood.png" alt="Archive 1" class="w-full h-full object-cover grayscale opacity-80">
+                    </div>
+                    <div class="aspect-[3/4] bg-[#F8F8F8] parallax-wrapper reveal delay-100 border border-black/10 p-3 mt-0 sm:mt-20">
+                        <img src="./images/Track.png" alt="Archive 2" class="w-full h-full object-cover grayscale opacity-80">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-40 px-6 max-w-screen-2xl mx-auto border-b border-black/10">
+            <div class="text-center mb-24 reveal">
+                <span class="text-[11px] tracking-[0.4em] uppercase font-bold text-gray-400 mb-4 block">02 . Visual Motifs</span>
+                <h2 class="font-serif text-4xl tracking-[0.1em] uppercase">Symbols of Direction and Time</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="border border-black/10 p-10 bg-white reveal group">
+                    <div class="aspect-square bg-verone-beige mb-10 overflow-hidden relative border border-black/5">
+                        <img src="./images/Compass.png" alt="Compass" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <h3 class="font-serif text-2xl tracking-[0.1em] uppercase mb-6 border-b border-black/10 pb-6">Compass <span class="text-sm text-gray-400 ml-3 font-sans">방향성</span></h3>
+                    <p class="text-sm font-light leading-loose text-gray-600">나침반은 유행에 흔들리지 않고 브랜드가 나아가야 할 명확한 철학적 방향성을 상징합니다.</p>
+                </div>
+                <div class="border border-black/10 p-10 bg-white reveal delay-100 group">
+                    <div class="aspect-square bg-verone-beige mb-10 overflow-hidden relative border border-black/5">
+                        <img src="./images/Watch.png" alt="Clock" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <h3 class="font-serif text-2xl tracking-[0.1em] uppercase mb-6 border-b border-black/10 pb-6">Clock <span class="text-sm text-gray-400 ml-3 font-sans">시간성</span></h3>
+                    <p class="text-sm font-light leading-loose text-gray-600">시계는 시간의 흐름 속에서도 고유의 가치를 잃지 않는 아카이브의 영속성을 의미합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-40 px-6 max-w-screen-2xl mx-auto border-b border-black/10">
+            <div class="mb-24 border-b border-black/10 pb-8 reveal">
+                <span class="text-[11px] tracking-[0.4em] uppercase font-bold text-gray-400 mb-4 block">03 . Color & Material</span>
+                <h2 class="font-serif text-4xl tracking-[0.1em] uppercase">Built on Timeless Materials</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="reveal">
+                    <div class="aspect-[4/5] bg-verone-brown mb-6 relative overflow-hidden group border border-black/10">
+                        <img src="./images/DarkBrown.png" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                        <div class="absolute top-6 left-6 bg-verone-gold text-verone-black text-[10px] font-bold px-3 py-1 uppercase tracking-[0.2em]">Primary</div>
+                    </div>
+                    <h4 class="text-sm font-bold tracking-[0.2em] uppercase mb-2">Dark Brown</h4>
+                    <p class="text-[11px] text-gray-500 tracking-wide">The Weight. 낡은 가죽의 깊이감.</p>
+                </div>
+                <div class="reveal delay-100">
+                    <div class="aspect-[4/5] bg-verone-forest-green mb-6 relative overflow-hidden group border border-black/10">
+                        <img src="./images/DeepGreen.png" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                        <div class="absolute top-6 left-6 bg-white text-verone-black text-[10px] font-bold px-3 py-1 uppercase tracking-[0.2em]">Secondary</div>
+                    </div>
+                    <h4 class="text-sm font-bold tracking-[0.2em] uppercase mb-2">Forest Green</h4>
+                    <p class="text-[11px] text-gray-500 tracking-wide">The Depth. 깊고 차분한 서브 컬러.</p>
+                </div>
+                <div class="reveal delay-200">
+                    <div class="aspect-[4/5] bg-verone-beige mb-6 relative overflow-hidden group border border-black/10">
+                        <img src="./images/Beige.png" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                        <div class="absolute top-6 left-6 bg-verone-black text-white text-[10px] font-bold px-3 py-1 uppercase tracking-[0.2em]">Background</div>
+                    </div>
+                    <h4 class="text-sm font-bold tracking-[0.2em] uppercase mb-2">Archive Beige</h4>
+                    <p class="text-[11px] text-gray-500 tracking-wide">The Canvas. 카탈로그 종이의 여백.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-40 px-6 max-w-screen-2xl mx-auto border-b border-black/10">
+            <div class="mb-20 border-b border-black/10 pb-8 reveal flex justify-between items-end">
+                <div>
+                    <span class="text-[11px] tracking-[0.4em] uppercase font-bold text-gray-400 mb-4 block">04 . Signature</span>
+                    <h2 class="font-serif text-3xl tracking-[0.1em] uppercase">Signature Pieces</h2>
+                </div>
+                <a href="#" class="border border-verone-black px-8 py-3 font-bold tracking-[0.2em] text-[10px] uppercase hover:bg-verone-black hover:text-verone-beige transition-all">Explore All</a>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="reveal group"><div class="bg-verone-beige aspect-[3/4] mb-5 overflow-hidden border border-black/10 relative"><img src="./images/Home.png" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500"></div><h4 class="text-sm font-semibold mb-1">Retro Uniform</h4><p class="text-[11px] text-gray-500">Deep Green</p></div>
+                <div class="reveal delay-100 group"><div class="bg-verone-beige aspect-[3/4] mb-5 overflow-hidden border border-black/10 relative"><img src="./images/WindBlack.png" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500"></div><h4 class="text-sm font-semibold mb-1">Heritage Windbreaker</h4><p class="text-[11px] text-gray-500">Archive Beige</p></div>
+                <div class="reveal delay-200 group"><div class="bg-verone-beige aspect-[3/4] mb-5 overflow-hidden border border-black/10 relative"><img src="./images/Jumper.png" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500"></div><h4 class="text-sm font-semibold mb-1">Varsity Jacket</h4><p class="text-[11px] text-gray-500">Navy / White</p></div>
+                <div class="reveal delay-300 group"><div class="bg-verone-beige aspect-[3/4] mb-5 overflow-hidden border border-black/10 relative"><img src="./images/BrownHoodie.png" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500"></div><h4 class="text-sm font-semibold mb-1">Essential Hoodie</h4><p class="text-[11px] text-gray-500">Heather Grey</p></div>
+            </div>
+        </section>
+
+        <section class="py-40 px-6 bg-verone-black text-verone-beige text-center border-t border-gray-900">
+            <div class="max-w-screen-md mx-auto reveal">
+                <h2 class="font-serif text-5xl md:text-6xl leading-tight mb-12">Time Passes.<br><span class="text-verone-gold italic">Values Remain.</span></h2>
+                <div class="w-12 h-[1px] bg-verone-beige mx-auto mb-10 opacity-50"></div>
+                <p class="font-sans tracking-[0.4em] uppercase text-sm">One For All.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-verone-black text-gray-400 pt-24 pb-12 text-[11px] tracking-[0.2em] border-t border-gray-900">
+        <div class="max-w-screen-2xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+            <div><h3 class="font-serif text-2xl text-verone-beige tracking-[0.2em] mb-6">VERONE</h3><p class="leading-relaxed">클래식 스포츠웨어, 새롭게 감각하다.<br>과거의 유산을 현대적으로 재해석합니다.</p></div>
+            <div><h4 class="text-white font-semibold uppercase tracking-[0.2em] mb-6">Help</h4><p class="text-lg font-serif text-white mb-2">1588-0000</p><p>월 - 금 10:00 - 17:00</p></div>
+            <div><h4 class="text-white font-semibold uppercase tracking-[0.2em] mb-6">Shop</h4><ul class="space-y-4"><li><a href="#" class="hover:text-white">All Products</a></li><li><a href="#" class="hover:text-white">Signature</a></li></ul></div>
+            <div><h4 class="text-white font-semibold uppercase tracking-[0.2em] mb-6">Social</h4><ul class="space-y-4"><li><a href="#" class="text-verone-gold">Brand Story</a></li><li><a href="#" class="hover:text-white">Instagram</a></li></ul></div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto px-6 pt-10 border-t border-gray-900 text-center opacity-60">© 2026 VERONE STUDIO. ALL RIGHTS RESERVED.</div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('is-visible'); });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
