@@ -100,6 +100,13 @@
             top: -10%;
             will-change: transform;
         }
+
+        /* Footer Typography Mapping */
+        .layout-container { max-width: 1440px; margin: 0 auto; padding: 0 40px; width: 100%; }
+        .typo-sec-02 { font-family: 'Inika', serif; font-weight: 700; font-size: 32px; letter-spacing: 0.1em; }
+        .typo-ft-title { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.01em; }
+        .typo-ft-link { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 14px; line-height: 1.6; }
+        .typo-ft-copy { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 12px; }
     </style>
 </head>
 <body class="font-sans font-light">
@@ -108,23 +115,34 @@
     <header class="w-full h-[80px] bg-verone-beige border-b border-gray-200 sticky top-0 z-50 transition-all">
         <div class="max-w-[1440px] mx-auto px-[40px] h-full grid grid-cols-12 gap-x-[24px] items-center">
             <!-- Left: Logo -->
-            <div class="col-span-3">
-                <a href="#" class="font-serif font-bold text-[24px] text-verone-green tracking-[0.1em]">VERONE</a>
+            <div class="col-span-3 flex items-center">
+                <a href="#" class="font-serif font-bold text-[28px] text-verone-green">VERONE</a>
             </div>
             
-            <!-- Center: Navigation (BRAND is Active) -->
-            <nav class="col-span-6 flex justify-center space-x-10 font-sans font-semibold text-[14px] tracking-[0.01em]">
-                <a href="#" class="text-verone-black hover:text-verone-green transition-colors">BEST</a>
-                <a href="#" class="text-verone-black hover:text-verone-green transition-colors">SHOP</a>
-                <a href="#" class="text-verone-green border-b-2 border-verone-green pb-1">BRAND</a>
-                <a href="#" class="text-verone-black hover:text-verone-green transition-colors">ARCHIVE</a>
-                <a href="#" class="text-verone-black hover:text-verone-green transition-colors">LOOKBOOK</a>
+            <!-- Center: Navigation (STORY is Active) -->
+            <nav class="col-span-6 flex items-center justify-center gap-[32px] font-sans font-semibold text-[14px] leading-[140%] tracking-[0.02em]">
+                <a href="#" class="relative text-verone-black hover:text-verone-green transition-colors group">
+                    SHOP
+                    <span class="absolute -bottom-1.5 left-0 w-full h-[2px] bg-transparent group-hover:bg-verone-green transition-colors"></span>
+                </a>
+                <a href="#" class="relative text-verone-black hover:text-verone-green transition-colors group">
+                    COLLECTION
+                    <span class="absolute -bottom-1.5 left-0 w-full h-[2px] bg-transparent group-hover:bg-verone-green transition-colors"></span>
+                </a>
+                <a href="#" class="relative text-verone-black hover:text-verone-green transition-colors group">
+                    ARCHIVE
+                    <span class="absolute -bottom-1.5 left-0 w-full h-[2px] bg-transparent group-hover:bg-verone-green transition-colors"></span>
+                </a>
+                <a href="#" class="relative text-verone-green transition-colors">
+                    STORY
+                    <span class="absolute -bottom-1.5 left-0 w-full h-[2px] bg-verone-green"></span>
+                </a>
             </nav>
 
             <!-- Right: Utility -->
-            <div class="col-span-3 flex justify-end space-x-8 font-sans font-semibold text-[14px] tracking-[0.01em]">
-                <a href="#" class="text-verone-black hover:text-verone-green transition-colors">MY</a>
+            <div class="col-span-3 flex items-center justify-end gap-[32px] font-sans font-semibold text-[14px] leading-[140%] tracking-[0.02em]">
                 <a href="#" class="text-verone-black hover:text-verone-green transition-colors">SEARCH</a>
+                <a href="#" class="text-verone-black hover:text-verone-green transition-colors">MY</a>
                 <a href="#" class="text-verone-black hover:text-verone-green transition-colors">BAG</a>
             </div>
         </div>
@@ -345,10 +363,10 @@
         </section>
 
         <!-- Section 07: Philosophy / Closing -->
-        <section class="w-full min-h-[700px] py-[160px] bg-verone-forest flex items-center justify-center">
+        <section class="w-full min-h-[560px] py-[160px] bg-verone-forest flex items-center justify-center">
             <div class="max-w-[1440px] w-full mx-auto px-[40px] grid grid-cols-12 gap-x-[24px]">
                 <div class="col-start-3 col-span-8 text-center reveal">
-                    <span class="font-sans font-bold text-[12px] text-verone-gold tracking-[0.2em] uppercase block mb-6">Philosophy</span>
+                    <span class="font-sans font-bold text-[12px] text-verone-gold tracking-[0.2em] uppercase mb-8 block">Philosophy</span>
                     <h2 class="font-serif font-bold text-[64px] leading-[110%] text-verone-beige mb-12 uppercase">
                         Time Passes.<br>
                         Values Remain.
@@ -361,71 +379,67 @@
         </section>
     </main>
 
-    <!-- Footer (Height: 440px) -->
-    <footer class="w-full h-[440px] bg-verone-black text-gray-400 py-[60px]">
-        <div class="max-w-[1440px] h-full mx-auto px-[40px] flex flex-col justify-between">
-            <div class="grid grid-cols-12 gap-x-[24px]">
-                <!-- Left: Info (Col 1~4) -->
-                <div class="col-span-4">
-                    <h3 class="font-serif font-bold text-[32px] text-verone-beige mb-6 uppercase tracking-[0.1em]">VERONE</h3>
-                    <p class="font-sans font-semibold text-[14px] tracking-[0.3em] uppercase text-verone-gold mb-6">One For All</p>
-                    <p class="font-sans font-light text-[14px] leading-[160%] mb-4 break-keep">
-                        Retro sportswear inspired by heritage, team spirit, and everyday movement.
-                    </p>
-                    <p class="font-sans font-light text-[14px] leading-[160%] text-gray-300">
-                        Time Passes. Values Remain.
-                    </p>
-                </div>
-                
-                <!-- Right: Menus (Col 5~12) -->
-                <div class="col-start-5 col-span-8 grid grid-cols-4 gap-x-[24px]">
-                    <!-- BRAND -->
-                    <div>
-                        <h4 class="text-white font-sans font-semibold text-[14px] uppercase tracking-[0.01em] mb-6">BRAND</h4>
-                        <ul class="space-y-4 font-sans font-light text-[14px]">
-                            <li><a href="#" class="hover:text-white transition-colors">About VERONE</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors">Heritage</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors">Archive</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors">Lookbook</a></li>
-                        </ul>
-                    </div>
-                    <!-- SHOP -->
-                    <div>
-                        <h4 class="text-white font-sans font-semibold text-[14px] uppercase tracking-[0.01em] mb-6">SHOP</h4>
-                        <ul class="space-y-4 font-sans font-light text-[14px]">
-                            <li><a href="#" class="hover:text-white transition-colors">Best Seller</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors">Jerseys</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors">Jackets</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors">Hoodies</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors">Bottoms</a></li>
-                        </ul>
-                    </div>
-                    <!-- SUPPORT -->
-                    <div>
-                        <h4 class="text-white font-sans font-semibold text-[14px] uppercase tracking-[0.01em] mb-6">SUPPORT</h4>
-                        <ul class="space-y-4 font-sans font-light text-[14px]">
-                            <li><a href="#" class="hover:text-white transition-colors">Notice</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors">Shipping</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
-                        </ul>
-                    </div>
-                    <!-- SOCIAL -->
-                    <div>
-                        <h4 class="text-white font-sans font-semibold text-[14px] uppercase tracking-[0.01em] mb-6">SOCIAL</h4>
-                        <ul class="space-y-4 font-sans font-light text-[14px]">
-                            <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors">YouTube</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors">Pinterest</a></li>
-                        </ul>
-                    </div>
+    <!-- Footer -->
+    <footer class="w-full bg-verone-black py-[80px]">
+        <div class="layout-container grid grid-cols-12 gap-[24px]">
+            <!-- Col 1: Brand Info -->
+            <div class="col-span-12 md:col-span-3 flex flex-col pr-0 md:pr-10 mb-10 md:mb-0">
+                <h2 class="typo-sec-02 text-white mb-4">VERONE</h2>
+                <div class="typo-ft-link text-[#F2EFE9]/70 space-y-2">
+                    <p class="font-bold text-white mb-2 tracking-widest uppercase">ONE FOR ALL</p>
+                    <p>Retro sportswear inspired by heritage, team spirit, and everyday movement.</p>
+                    <p class="italic pt-2">Time Passes. Values Remain.</p>
                 </div>
             </div>
             
-            <!-- Bottom Legal -->
-            <div class="border-t border-gray-800 pt-6 flex justify-between items-center font-sans font-light text-[12px] opacity-70">
-                <p>&copy; 2026 VERONE STUDIO. All Rights Reserved.</p>
-                <div class="flex space-x-6">
+            <!-- Col 2: BRAND -->
+            <div class="col-span-6 md:col-span-2 md:col-start-5 flex flex-col mb-10 md:mb-0">
+                <h3 class="typo-ft-title text-white mb-6 uppercase">BRAND</h3>
+                <div class="flex flex-col gap-3 typo-ft-link text-[#F2EFE9]/70">
+                    <a href="#" class="hover:text-white transition-colors">About VERONE</a>
+                    <a href="#" class="hover:text-white transition-colors">Heritage</a>
+                    <a href="#" class="hover:text-white transition-colors">Archive</a>
+                    <a href="#" class="hover:text-white transition-colors">Lookbook</a>
+                </div>
+            </div>
+            
+            <!-- Col 3: SHOP -->
+            <div class="col-span-6 md:col-span-2 flex flex-col mb-10 md:mb-0">
+                <h3 class="typo-ft-title text-white mb-6 uppercase">SHOP</h3>
+                <div class="flex flex-col gap-3 typo-ft-link text-[#F2EFE9]/70">
+                    <a href="#" class="hover:text-white transition-colors">Best Seller</a>
+                    <a href="#" class="hover:text-white transition-colors">Jerseys</a>
+                    <a href="#" class="hover:text-white transition-colors">Jackets</a>
+                    <a href="#" class="hover:text-white transition-colors">Hoodies</a>
+                    <a href="#" class="hover:text-white transition-colors">Bottoms</a>
+                </div>
+            </div>
+            
+            <!-- Col 4: SUPPORT -->
+            <div class="col-span-6 md:col-span-2 flex flex-col">
+                <h3 class="typo-ft-title text-white mb-6 uppercase">SUPPORT</h3>
+                <div class="flex flex-col gap-3 typo-ft-link text-[#F2EFE9]/70">
+                    <a href="#" class="hover:text-white transition-colors">Notice</a>
+                    <a href="#" class="hover:text-white transition-colors">FAQ</a>
+                    <a href="#" class="hover:text-white transition-colors">Shipping</a>
+                    <a href="#" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+
+            <!-- Col 5: SOCIAL -->
+            <div class="col-span-6 md:col-span-2 flex flex-col">
+                <h3 class="typo-ft-title text-white mb-6 uppercase">SOCIAL</h3>
+                <div class="flex flex-col gap-3 typo-ft-link text-[#F2EFE9]/70">
+                    <a href="#" class="hover:text-white transition-colors">Instagram</a>
+                    <a href="#" class="hover:text-white transition-colors">YouTube</a>
+                    <a href="#" class="hover:text-white transition-colors">Pinterest</a>
+                </div>
+            </div>
+
+            <!-- Bottom Row: Copyright & Policy -->
+            <div class="col-span-12 mt-16 pt-8 border-t border-[#F2EFE9]/10 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="typo-ft-copy text-[#F2EFE9]/50">&copy; 2026 VERONE STUDIO. All Rights Reserved.</p>
+                <div class="flex items-center gap-6 typo-ft-link text-[#F2EFE9]/50 text-xs">
                     <a href="#" class="hover:text-white transition-colors">Terms of Use</a>
                     <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
                     <a href="#" class="hover:text-white transition-colors">이용약관</a>
